@@ -9,6 +9,7 @@ public class Main {
         // реализуйте алгоритм здесь
             Util.getConnection();
             UserDao userDao = new UserDaoJDBCImpl();
+            userDao.dropUsersTable();
 
             userDao.createUsersTable();
 
