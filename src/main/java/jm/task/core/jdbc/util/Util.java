@@ -1,5 +1,7 @@
 package jm.task.core.jdbc.util;
 
+import com.mysql.cj.x.protobuf.MysqlxCursor;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -11,7 +13,7 @@ public class Util {
     private static final String DB_USERNAME = "root";
     private static final String DB_PASSWORD = "12345678w";
 
-    public static Connection getConnection(){
+    public static Connection getConnection() {
         Connection connection = null;
         try {
             Class.forName(DB_DRIVER);
@@ -20,5 +22,9 @@ public class Util {
             e.printStackTrace();
         }
         return connection;
+    }
+    public static void close() throws SQLException {
+        getConnection().close();
+        System.out.println("Соединение закрыто");
     }
 }
