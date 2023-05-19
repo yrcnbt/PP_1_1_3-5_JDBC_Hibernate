@@ -2,6 +2,7 @@
 <project version="4">
   <component name="SqlDialectMappings">
     <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/4dc8106c-d153-4a94-bbc3-c9d1cb8077e7/console.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/UserDaoJDBCImpl.java" dialect="GenericSQL" />
   </component>
 </project>
